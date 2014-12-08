@@ -1,11 +1,12 @@
+demo/DAO/Impl/TicketsDAOImpl.class
+demo/Logic/raffleLogic.class
 demo/DAO/TicketsDAO.class
 demo/DAO/BucketsDAO.class
 demo/Application.class
-demo/DAO/Impl/TicketsDAOImpl.class
+demo/DAO/SimpleCORSFilter.class
 demo/DAO/BaseDAO.class
 demo/Model/Tickets.class
 demo/DAO/Impl/BaseDAOImpl.class
 demo/Model/Buckets.class
-demo/Logic/selectWinner.class
 demo/DAO/Impl/BucketsDAOImpl.class
 demo/Logic/checkInconsistencies.class

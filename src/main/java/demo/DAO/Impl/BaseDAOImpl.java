@@ -2,8 +2,6 @@ package demo.DAO.Impl;
 
 import demo.DAO.BaseDAO;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.dao.DuplicateKeyException;
 import org.springframework.orm.ibatis.support.SqlMapClientDaoSupport;
 
@@ -16,7 +14,6 @@ import java.util.*;
  */
 @SuppressWarnings("unchecked")
 public abstract class BaseDAOImpl extends SqlMapClientDaoSupport  implements BaseDAO {
-    private static Logger LOG = LoggerFactory.getLogger(BaseDAOImpl.class);
 
     /**
      * Get all fields for type
@@ -45,7 +42,7 @@ public abstract class BaseDAOImpl extends SqlMapClientDaoSupport  implements Bas
         try {
             rval = getSqlMapClient().queryForList(type.getSimpleName() + ".getAll");
         } catch (SQLException e) {
-            LOG.error("Error getting all " + type.getSimpleName() + "s: ", e);
+
         }
 
         return rval;
@@ -62,9 +59,9 @@ public abstract class BaseDAOImpl extends SqlMapClientDaoSupport  implements Bas
             id =  (Integer)getSqlMapClient().insert(type.getSimpleName() + ".add", object);
             rval = getById(id, type);
         } catch (DuplicateKeyException e) {
-            LOG.error("Error adding " + type.getSimpleName() + ": ", e);
+
         } catch (SQLException e) {
-            LOG.error("Error adding " + type.getSimpleName() + ": ", e);
+
         }
 
         return rval;
@@ -81,9 +78,9 @@ public abstract class BaseDAOImpl extends SqlMapClientDaoSupport  implements Bas
             id =  (Integer)getSqlMapClient().insert(type.getSimpleName() + ".update", object);
             rval = getById(id, type);
         } catch (DuplicateKeyException e) {
-            LOG.error("Error adding " + type.getSimpleName() + ": ", e);
+
         } catch (SQLException e) {
-            LOG.error("Error adding " + type.getSimpleName() + ": ", e);
+
         }
 
         return rval;
@@ -99,7 +96,7 @@ public abstract class BaseDAOImpl extends SqlMapClientDaoSupport  implements Bas
         try {
             rval = (T) getSqlMapClient().queryForObject(type.getSimpleName() + ".getById", id);
         } catch (SQLException e) {
-            LOG.error("Error getting " + type.getSimpleName() + " by ID: ", e);
+
         }
 
         return rval;
@@ -115,7 +112,7 @@ public abstract class BaseDAOImpl extends SqlMapClientDaoSupport  implements Bas
         try {
             rval = (T) getSqlMapClient().queryForObject(type.getSimpleName() + ".getTickets", object);
         } catch (SQLException e) {
-            LOG.error("Error getting " + type.getSimpleName() + " by ID: ", e);
+
         }
 
         return rval;
@@ -131,7 +128,7 @@ public abstract class BaseDAOImpl extends SqlMapClientDaoSupport  implements Bas
         try {
             rval = (T) getSqlMapClient().queryForObject(type.getSimpleName() + ".getByCriteria", object);
         } catch (SQLException e) {
-            LOG.error("Error getting " + type.getSimpleName() + " by ID: ", e);
+
         }
 
         return rval;
@@ -147,7 +144,7 @@ public abstract class BaseDAOImpl extends SqlMapClientDaoSupport  implements Bas
         try {
             rval = (T) getSqlMapClient().queryForObject(type.getSimpleName() + ".deletes", object);
         } catch (SQLException e) {
-            LOG.error("Error deleting " + type.getSimpleName() + " by ID: ", e);
+
         }
 
         return rval;
@@ -163,7 +160,7 @@ public abstract class BaseDAOImpl extends SqlMapClientDaoSupport  implements Bas
         try {
             rval = (T) getSqlMapClient().queryForObject(type.getSimpleName() + ".deletes", object);
         } catch (SQLException e) {
-            LOG.error("Error deleting event " + type.getSimpleName() + " by ID: ", e);
+
         }
 
         return rval;
@@ -180,7 +177,7 @@ public abstract class BaseDAOImpl extends SqlMapClientDaoSupport  implements Bas
         try {
             rval = (T) getSqlMapClient().queryForObject(type.getSimpleName() + ".getWinner", object);
         } catch (SQLException e) {
-            LOG.error("Error getting winner " + type.getSimpleName() + " by ID: ", e);
+
         }
 
         return rval;
