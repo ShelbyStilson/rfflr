@@ -1,0 +1,48 @@
+package demo.Model;
+
+public class Tickets {
+    private Integer id;
+    private Integer employee;
+    private Integer ticketNum;
+    private Integer raffleId;
+
+    public String toJson(){
+        return "{\"id\": " + this.id + ", "
+                + "\"employee\": \"" + this.employee + "\", "
+                + "\"ticketNum\": \"" + this.ticketNum + "\", "
+                + "\"raffleId\": \"" + this.raffleId + "\", "
+                + "}";
+    }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public Integer getEmployee() {
+        return employee;
+    }
+
+    public void setEmployee(Integer employee) {
+        this.employee = employee;
+    }
+
+    public Integer getTicketNum() {
+        return ticketNum;
+    }
+
+    public void setTicketNum(Integer ticketNum) {
+        this.ticketNum = ticketNum;
+    }
+
+    public Integer getRaffleId() {
+        return raffleId;
+    }
+
+    public void setRaffleId(Integer raffleId) {
+        this.raffleId = raffleId;
+    }
+}
