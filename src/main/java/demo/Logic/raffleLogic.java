@@ -4,19 +4,27 @@ import demo.DAO.Impl.BucketsDAOImpl;
 import demo.Model.Buckets;
 import demo.Model.Tickets;
 import demo.DAO.Impl.TicketsDAOImpl;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.RequestMethod;
 
 import java.util.List;
 
+@RestController
 public class raffleLogic {
 
-    BucketsDAOImpl bucketsDAO = new BucketsDAOImpl();
-    TicketsDAOImpl ticketsDAO = new TicketsDAOImpl();
+    private BucketsDAOImpl bucketsDAO = new BucketsDAOImpl();
+    private TicketsDAOImpl ticketsDAO = new TicketsDAOImpl();
 
-    public int getWinner(Integer raffleId, Integer bucketId) {
+    @RequestMapping(value="/winner/{raffleId}/{bucketId}", method=RequestMethod.GET)
+    public int getWinner(@PathVariable(value="raffleId") Integer raffleId, @PathVariable(value="bucketId") Integer bucketId) {
         return bucketsDAO.getWinner(raffleId, bucketId).getEntry();
     }
 
-    public boolean addEntry(Integer employee, Integer raffleId, Integer bucketId, Integer amount, boolean singleEntry) {
+    @RequestMapping(value="/add/{employee}/{raffleId}/{bucketId}/{amount}/{singleEntry}", method=RequestMethod.POST)
+    public boolean addEntry(@PathVariable(value="employee") Integer employee, @PathVariable(value="raffleId") Integer raffleId,
+                            @PathVariable(value="bucketId") Integer bucketId, @PathVariable(value="amount") Integer amount, @PathVariable(value="singleEntry") boolean singleEntry) {
 
         Buckets bucket = new Buckets();
         Tickets ticket = new Tickets();
@@ -49,11 +57,13 @@ public class raffleLogic {
         return false;
     }
 
-    public Integer getTickets(Integer employee, Integer raffleId) {
+    @RequestMapping(value="/tickets/{employee}/{raffleId}", method=RequestMethod.GET)
+    public Integer getTickets(@PathVariable(value="employee") Integer employee, @PathVariable(value="raffleId") Integer raffleId) {
         return ticketsDAO.getTickets(employee,raffleId).getTicketNum();
     }
 
-    public boolean deleteTickets(Integer employee, Integer raffleId, Integer ticketDec) {
+    @RequestMapping(value="/ticketdelete/{employee}/{raffleId}/{ticketDec}", method=RequestMethod.DELETE)
+    public boolean deleteTickets(@PathVariable(value="employee") Integer employee, @PathVariable(value="raffleId") Integer raffleId, @PathVariable(value="ticketDec") Integer ticketDec) {
 
         if (ticketsDAO.getByEmployee(employee, raffleId)) {
             Tickets ticket = new Tickets();
@@ -76,7 +86,8 @@ public class raffleLogic {
         return false;
     }
 
-    public boolean giveTickets(Integer employee, Integer raffleId, Integer tickets) {
+    @RequestMapping(value="/give/{employee}/{raffleId}/{bucketId}", method=RequestMethod.POST)
+    public boolean giveTickets(@PathVariable(value="employee") Integer employee, @PathVariable(value="raffleId") Integer raffleId, @PathVariable(value="tickets") Integer tickets) {
         Tickets ticket = new Tickets();
         ticket.setRaffleId(raffleId);
         ticket.setEmployee(employee);
@@ -92,11 +103,13 @@ public class raffleLogic {
         return false;
     }
 
-    public void deleteEmployee(Integer raffleId, Integer employee) {
+    @RequestMapping(value="/employeedelete/{raffleId}/{employee}", method=RequestMethod.DELETE)
+    public void deleteEmployee(@PathVariable(value="raffleId") Integer raffleId, @PathVariable(value="employee") Integer employee) {
         bucketsDAO.delete(employee, raffleId);
     }
 
-    public List<Integer> getMultipleForBucket(Integer raffleId, Integer bucketId, Integer howMany) {
+    @RequestMapping(value="/multiplewinners/{raffleId}/{bucketId}/{howMany}", method=RequestMethod.GET)
+    public List<Integer> getMultipleForBucket(@PathVariable(value="raffleId") Integer raffleId, @PathVariable(value="bucketId") Integer bucketId, @PathVariable(value="howMany") Integer howMany) {
         List<Integer> winners = null;
         Integer contestant = 0;
 
@@ -109,15 +122,18 @@ public class raffleLogic {
         return winners;
     }
 
-    public void deleteRaffleEntries(Integer raffleId) {
+    @RequestMapping(value="/raffledelete/{raffleId}", method=RequestMethod.DELETE)
+    public void deleteRaffleEntries(@PathVariable(value="raffleId") Integer raffleId) {
         bucketsDAO.deleteRaffle(raffleId);
     }
 
-    public void deleteBucketEntries(Integer bucketId) {
+    @RequestMapping(value="/bucketdelete/{bucketId}", method=RequestMethod.DELETE)
+    public void deleteBucketEntries(@PathVariable(value="bucketId") Integer bucketId) {
         bucketsDAO.deleteBucket(bucketId);
     }
 
-    public int getNumberInBucket(Integer bucketId) {
+    @RequestMapping(value="/number/{bucketId}", method=RequestMethod.GET)
+    public int getNumberInBucket(@PathVariable(value="bucketId") Integer bucketId) {
         return 0;
     }
 }
