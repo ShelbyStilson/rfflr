@@ -39,9 +39,9 @@ public class raffleLogic {
         return true;
     }
 
-    @RequestMapping(value="/error", method=RequestMethod.GET)
+    @RequestMapping(value="/test", method=RequestMethod.GET)
     public String error() {
-        return "failed for some reason";
+        return "<h1>Working</h1>";
     }
 
     @RequestMapping(value="/add/{employee}/{raffleId}/{bucketId}/{amount}/{singleEntry}", method=RequestMethod.POST)

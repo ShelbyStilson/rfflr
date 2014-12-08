@@ -2,7 +2,7 @@
 <!DOCTYPE sqlMap PUBLIC "-//iBATIS.com//DTD SQL Map 2.0//EN" "http://www.ibatis.com/dtd/sql-map-2.dtd">
 
 <sqlMap namespace="Tickets">
-    <resultMap id="result" class="com.zappos.fraudchallenge.model.Tickets">
+    <resultMap id="result" class="demo.Tickets">
         <result property="id" column="id"/>
         <result property="employee" column="employee"/>
         <result property="ticketNum" column="ticketNum"/>
