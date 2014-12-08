@@ -23,6 +23,7 @@ public class raffleLogic {
 
     public static void main(String[] args) {
         SpringApplication.run(raffleLogic.class, args);
+
     }
 
     private BucketsDAOImpl bucketsDAO = new BucketsDAOImpl();
@@ -31,6 +32,16 @@ public class raffleLogic {
     @RequestMapping(value="/winner/{raffleId}/{bucketId}", method=RequestMethod.GET)
     public int getWinner(@PathVariable(value="raffleId") Integer raffleId, @PathVariable(value="bucketId") Integer bucketId) {
         return bucketsDAO.getWinner(raffleId, bucketId).getEntry();
+    }
+
+    @RequestMapping(value="/", method=RequestMethod.GET)
+    public boolean working() {
+        return true;
+    }
+
+    @RequestMapping(value="/error", method=RequestMethod.GET)
+    public String error() {
+        return "failed for some reason";
     }
 
     @RequestMapping(value="/add/{employee}/{raffleId}/{bucketId}/{amount}/{singleEntry}", method=RequestMethod.POST)
