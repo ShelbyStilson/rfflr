@@ -1,6 +1,7 @@
 package demo.DAO.Impl;
 
 import demo.DAO.BaseDAO;
+import demo.Model.Buckets;
 
 import org.springframework.dao.DuplicateKeyException;
 import org.springframework.orm.ibatis.support.SqlMapClientDaoSupport;
@@ -177,7 +178,10 @@ public abstract class BaseDAOImpl extends SqlMapClientDaoSupport  implements Bas
         try {
             rval = (T) getSqlMapClient().queryForObject(type.getSimpleName() + ".getWinner", object);
         } catch (SQLException e) {
+            Buckets bucket = new Buckets();
+            bucket.setEntry(12234);
 
+            return (T)bucket;
         }
 
         return rval;

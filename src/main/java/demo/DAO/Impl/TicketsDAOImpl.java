@@ -4,12 +4,30 @@ import demo.Model.Tickets;
 import demo.DAO.TicketsDAO;
 import demo.DAO.Impl.BaseDAOImpl;
 
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
 import java.util.List;
 
 /**
  * This DAO interfaces with Ibatis to handle data persistence for {@link Tickets} objects
  */
 public class TicketsDAOImpl extends BaseDAOImpl implements TicketsDAO {
+
+
+    private Connection conn;
+
+    public TicketsDAOImpl() {
+
+        try {
+            conn =
+                    DriverManager.getConnection("jdbc:mysql://hax.cefatfwntgxp.us-west-2.rds.amazonaws.com/hackathon?" +
+                            "user=haxuzr&password=SecretShit55");
+
+        } catch (SQLException ex) {
+            System.out.println("Crapped Out.");
+        }
+    }
 
     //Set TYPE so BaseDAOImpl knows which sqlMap to call
     private static final Class<Tickets> TYPE = Tickets.class;
