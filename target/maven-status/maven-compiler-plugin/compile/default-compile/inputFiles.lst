@@ -1,7 +1,7 @@
-/Users/stilson/Dropbox/demo/src/main/java/demo/Model/Tickets.java
-/Users/stilson/Dropbox/demo/src/main/java/demo/DAO/SimpleCORSFilter.java
-/Users/stilson/Dropbox/demo/src/main/java/demo/Model/Buckets.java
-/Users/stilson/Dropbox/demo/src/main/java/demo/DAO/Impl/TicketsDAOImpl.java
-/Users/stilson/Dropbox/demo/src/main/java/demo/DAO/Impl/BucketsDAOImpl.java
-/Users/stilson/Dropbox/demo/src/main/java/demo/Logic/raffleLogic.java
-/Users/stilson/Dropbox/demo/src/main/java/demo/Logic/checkInconsistencies.java
+/Users/stilson/Dropbox/rfflr/src/main/java/rfflr/Model/Tickets.java
+/Users/stilson/Dropbox/rfflr/src/main/java/rfflr/DAO/SimpleCORSFilter.java
+/Users/stilson/Dropbox/rfflr/src/main/java/rfflr/Model/Buckets.java
+/Users/stilson/Dropbox/rfflr/src/main/java/rfflr/Model/BucketsDAOImpl.java
+/Users/stilson/Dropbox/rfflr/src/main/java/rfflr/Logic/raffleLogic.java
+/Users/stilson/Dropbox/rfflr/src/main/java/rfflr/Model/TicketsDAOImpl.java
+/Users/stilson/Dropbox/rfflr/src/main/java/rfflr/Logic/checkInconsistencies.java

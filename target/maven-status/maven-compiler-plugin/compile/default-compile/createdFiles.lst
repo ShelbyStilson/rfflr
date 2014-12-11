@@ -1,7 +1,7 @@
-demo/DAO/Impl/TicketsDAOImpl.class
-demo/Logic/raffleLogic.class
-demo/DAO/SimpleCORSFilter.class
-demo/Model/Tickets.class
-demo/Model/Buckets.class
-demo/DAO/Impl/BucketsDAOImpl.class
-demo/Logic/checkInconsistencies.class
+rfflr/DAO/SimpleCORSFilter.class
+rfflr/Model/BucketsDAOImpl.class
+rfflr/Model/Tickets.class
+rfflr/Model/Buckets.class
+rfflr/Logic/checkInconsistencies.class
+rfflr/Model/TicketsDAOImpl.class
+rfflr/Logic/raffleLogic.class

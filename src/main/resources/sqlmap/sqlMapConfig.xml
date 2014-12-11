@@ -1,7 +1,0 @@
-
-
-<sqlMapConfig>
-    <settings useStatementNamespaces="true" lazyLoadingEnabled="false"/>
-    <sqlMap resource="sqlmap/buckets.xml"/>
-    <sqlMap resource="sqlmap/tickets.xml"/>
-</sqlMapConfig>
