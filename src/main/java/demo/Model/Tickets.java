@@ -1,9 +1,27 @@
 package demo.Model;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+import javax.validation.constraints.NotNull;
+
+@Entity
+@Table (name = "Tickets")
 public class Tickets {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
+
+    @NotNull
     private Integer employee;
+
+    @NotNull
     private Integer ticketNum;
+
+    @NotNull
     private Integer raffleId;
 
     public String toJson(){

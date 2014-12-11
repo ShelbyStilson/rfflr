@@ -1,16 +1,7 @@
 /Users/stilson/Dropbox/demo/src/main/java/demo/Model/Tickets.java
-/Users/stilson/Dropbox/demo/src/main/java/demo/DAO/BaseDAO.java
+/Users/stilson/Dropbox/demo/src/main/java/demo/DAO/SimpleCORSFilter.java
 /Users/stilson/Dropbox/demo/src/main/java/demo/Model/Buckets.java
 /Users/stilson/Dropbox/demo/src/main/java/demo/DAO/Impl/TicketsDAOImpl.java
 /Users/stilson/Dropbox/demo/src/main/java/demo/DAO/Impl/BucketsDAOImpl.java
 /Users/stilson/Dropbox/demo/src/main/java/demo/Logic/raffleLogic.java
-/Users/stilson/Dropbox/demo/src/main/java/demo/RaffleEventDaoImpl.java
-/Users/stilson/Dropbox/demo/src/main/java/demo/RaffleEventDAO.java
-/Users/stilson/Dropbox/demo/src/main/java/demo/RaffleEvent.java
-/Users/stilson/Dropbox/demo/src/main/java/demo/DAO/TicketsDAO.java
 /Users/stilson/Dropbox/demo/src/main/java/demo/Logic/checkInconsistencies.java
-/Users/stilson/Dropbox/demo/src/main/java/demo/DAO/SimpleCORSFilter.java
-/Users/stilson/Dropbox/demo/src/main/java/demo/RaffleEventController.java
-/Users/stilson/Dropbox/demo/src/main/java/demo/DAO/Impl/BaseDAOImpl.java
-/Users/stilson/Dropbox/demo/src/main/java/demo/Application.java
-/Users/stilson/Dropbox/demo/src/main/java/demo/DAO/BucketsDAO.java

@@ -4,15 +4,14 @@ import demo.DAO.Impl.BucketsDAOImpl;
 import demo.Model.Buckets;
 import demo.Model.Tickets;
 import demo.DAO.Impl.TicketsDAOImpl;
-import demo.RaffleEvent;
-import demo.RaffleEventDAO;
-import demo.RaffleEventDaoImpl;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.bind.annotation.*;
 import javax.servlet.http.HttpServletResponse;
+
 
 import java.util.List;
 
@@ -22,13 +21,17 @@ import java.util.List;
 @RestController
 public class raffleLogic {
 
+    @Autowired
+    private TicketsDAOImpl ticketsDAO;
+
+    @Autowired
+    private BucketsDAOImpl bucketsDAO;
+
+
     public static void main(String[] args) {
         SpringApplication.run(raffleLogic.class, args);
 
     }
-
-    private BucketsDAOImpl bucketsDAO = new BucketsDAOImpl();
-    private TicketsDAOImpl ticketsDAO = new TicketsDAOImpl();
 
     @RequestMapping(value="/winner/{raffleId}/{bucketId}", method=RequestMethod.GET)
     @ResponseBody
@@ -66,14 +69,14 @@ public class raffleLogic {
             bucket.setEntry(employee);
             bucket.setTickets(amount);
 
-            ticketsDAO.update(ticket);
+            ticketsDAO.save(ticket);
 
             if (!singleEntry) {
                 for (int i = 0; i < amount; i++) {
-                    bucketsDAO.add(bucket);
+                    bucketsDAO.save(bucket);
                 }
             } else {
-                bucketsDAO.add(bucket);
+                bucketsDAO.save(bucket);
             }
 
             return true;
@@ -92,9 +95,12 @@ public class raffleLogic {
     @ResponseBody
     public boolean deleteTickets(@PathVariable(value="employee") Integer employee, @PathVariable(value="raffleId") Integer raffleId, @PathVariable(value="ticketDec") Integer ticketDec, HttpServletResponse response) {
 
-        if (ticketsDAO.getByEmployee(employee, raffleId)) {
-            Tickets ticket = new Tickets();
+        Tickets ticket = new Tickets();
 
+        ticket.setRaffleId(raffleId);
+        ticket.setEmployee(employee);
+
+        if (ticketsDAO.getByEmployee(employee, raffleId) != null) {
             Integer ticketNum = getTickets(employee, raffleId, response) - ticketDec;
 
             if (ticketNum < 0) {
@@ -102,10 +108,8 @@ public class raffleLogic {
             }
 
             ticket.setTicketNum(ticketNum);
-            ticket.setRaffleId(raffleId);
-            ticket.setEmployee(employee);
 
-            ticketsDAO.update(ticket);
+            ticketsDAO.save(ticket);
 
             return true;
         }
@@ -120,12 +124,12 @@ public class raffleLogic {
         ticket.setRaffleId(raffleId);
         ticket.setEmployee(employee);
 
-        if (ticketsDAO.getByEmployee(employee, raffleId)){
+        if (ticketsDAO.getByEmployee(employee, raffleId) != null){
             ticket.setTicketNum(tickets + getTickets(employee,raffleId, response));
-            ticketsDAO.update(ticket);
+            ticketsDAO.save(ticket);
         } else {
             ticket.setTicketNum(tickets);
-            ticketsDAO.add(ticket);
+            ticketsDAO.save(ticket);
         }
 
         return false;
@@ -134,7 +138,11 @@ public class raffleLogic {
     @RequestMapping(value="/employeedelete/{raffleId}/{employee}", method=RequestMethod.DELETE)
     @ResponseBody
     public void deleteEmployee(@PathVariable(value="raffleId") Integer raffleId, @PathVariable(value="employee") Integer employee, HttpServletResponse response) {
-        bucketsDAO.delete(employee, raffleId);
+        Buckets bucket = new Buckets();
+        bucket.setEntry(employee);
+        bucket.setRaffleId(raffleId);
+
+        bucketsDAO.delete(bucket);
     }
 
     @RequestMapping(value="/multiplewinners/{raffleId}/{bucketId}/{howMany}", method=RequestMethod.POST)
@@ -146,7 +154,12 @@ public class raffleLogic {
         for (int i = 0; i < howMany; i++) {
             contestant = getWinner(raffleId, bucketId, response);
             winners.add(contestant);
-            bucketsDAO.delete(raffleId, contestant);
+
+            Buckets bucket = new Buckets();
+            bucket.setEntry(contestant);
+            bucket.setRaffleId(raffleId);
+
+            bucketsDAO.delete(bucket);
         }
 
         return winners;
@@ -155,58 +168,25 @@ public class raffleLogic {
     @RequestMapping(value="/raffledelete/{raffleId}", method=RequestMethod.DELETE)
     @ResponseBody
     public void deleteRaffleEntries(@PathVariable(value="raffleId") Integer raffleId, HttpServletResponse response) {
-        bucketsDAO.deleteRaffle(raffleId);
+        Buckets bucket = new Buckets();
+        bucket.setRaffleId(raffleId);
+
+        bucketsDAO.delete(bucket);
     }
 
     @RequestMapping(value="/bucketdelete/{bucketId}", method=RequestMethod.DELETE)
     @ResponseBody
     public void deleteBucketEntries(@PathVariable(value="bucketId") Integer bucketId, HttpServletResponse response) {
-        bucketsDAO.deleteBucket(bucketId);
+        Buckets bucket = new Buckets();
+        bucket.setBucketId(bucketId);
+
+        bucketsDAO.delete(bucket);
     }
 
     @RequestMapping(value="/number/{bucketId}", method=RequestMethod.POST)
     @ResponseBody
     public int getNumberInBucket(@PathVariable(value="bucketId") Integer bucketId, HttpServletResponse response) {
         return 0;
-    }
-
-    private static final RaffleEventDAO raedi= new RaffleEventDaoImpl();
-
-    @RequestMapping(value="/events", method=RequestMethod.GET)
-    public List<RaffleEvent> getAllRaffleEvent() {
-        return raedi.getAllRaffleEvents();
-    }
-
-    @RequestMapping(value="/events", method=RequestMethod.POST)
-    public @ResponseBody
-    RaffleEvent addRaffleEventEvent(@RequestBody RaffleEvent event) {
-        return raedi.createRaffleEvent(event.getTitle(),
-                event.getStartTime(),
-                event.getEndTime(),
-                event.getDescription(),
-                event.getHost(),
-                event.getImage(),
-                event.getLink(),
-                event.getContactPhone(),
-                event.getContactEmail(),
-                event.getLocation());
-    }
-
-    @RequestMapping(value="/events/{id}", method=RequestMethod.GET)
-    public @ResponseBody RaffleEvent getRaffleEventById(@PathVariable(value="id") int id) {
-        return raedi.getRaffleEvent(id);
-    }
-
-    @RequestMapping(value="/events/{id}", method=RequestMethod.POST)
-    public @ResponseBody RaffleEvent updateRaffleEvent(@RequestBody RaffleEvent event, @PathVariable(value="id")  int id) {
-        event.setId(id);
-        return raedi.updateRaffleEvent(event);
-    }
-
-
-    @RequestMapping(value="/events/{id}", method=RequestMethod.DELETE)
-    public @ResponseBody void deleteRaffleEvent(@PathVariable(value="id") int id) {
-        raedi.deleteRaffleEvent(id);
     }
 
 }
