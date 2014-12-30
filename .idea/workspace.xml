@@ -2,18 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="67aad0c4-998b-4dbe-bd2f-e934d43ab126" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/spring/servlet-context.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/spring/spring-context.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/spring/spring-dao.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/spring/spring-dataSource.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/spring/spring-web-dispatch.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/sqlmap/buckets.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/sqlmap/sqlMapConfig.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/sqlmap/tickets.xml" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/rfflr/DAO/Impl/BucketsDAOImpl.java" afterPath="$PROJECT_DIR$/src/main/java/rfflr/Model/BucketsDAOImpl.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/rfflr/DAO/Impl/TicketsDAOImpl.java" afterPath="$PROJECT_DIR$/src/main/java/rfflr/Model/TicketsDAOImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/rfflr/Model/Buckets.java" afterPath="$PROJECT_DIR$/src/main/java/rfflr/Model/Buckets.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/rfflr/Model/Tickets.java" afterPath="$PROJECT_DIR$/src/main/java/rfflr/Model/Tickets.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/rfflr/WEBViews/WEBINF/pickPrize.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/rfflr/Model/ticketAmount.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/rfflr/WEBViews/WEBINF/pickPrize.html" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/rfflr/WEBViews/WEBINF/addTickets.html" afterPath="$PROJECT_DIR$/src/main/java/rfflr/WEBViews/WEBINF/addTickets.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.name" afterPath="$PROJECT_DIR$/.idea/.name" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/rfflr/Model/BucketsDAOImpl.java" afterPath="$PROJECT_DIR$/src/main/java/rfflr/Model/BucketsDAOImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/rfflr/Model/Numbers.java" afterPath="$PROJECT_DIR$/src/main/java/rfflr/Model/Numbers.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/rfflr/Model/NumbersDAOImpl.java" afterPath="$PROJECT_DIR$/src/main/java/rfflr/Model/NumbersDAOImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/rfflr/Model/TicketsDAOImpl.java" afterPath="$PROJECT_DIR$/src/main/java/rfflr/Model/TicketsDAOImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/rfflr/Logic/raffleLogic.java" afterPath="$PROJECT_DIR$/src/main/java/rfflr/Logic/raffleLogic.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -41,24 +41,132 @@
       <file leaf-file-name="raffleLogic.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/rfflr/Logic/raffleLogic.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="2.4444444" vertical-offset="45" max-vertical-offset="2955">
-              <caret line="157" column="35" selection-start-line="157" selection-start-column="35" selection-end-line="157" selection-end-column="35" />
+            <state vertical-scroll-proportion="0.88331515" vertical-offset="1800" max-vertical-offset="4365">
+              <caret line="187" column="0" selection-start-line="187" selection-start-column="0" selection-end-line="187" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ticketAmount.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/rfflr/Model/ticketAmount.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="495">
+              <caret line="0" column="20" selection-start-line="0" selection-start-column="20" selection-end-line="0" selection-end-column="20" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1401#1402#0" expanded="true" />
-                <element signature="e#1442#1443#0" expanded="true" />
+                <element signature="e#168#169#0" expanded="true" />
+                <element signature="e#196#197#0" expanded="true" />
+                <element signature="e#235#236#0" expanded="true" />
+                <element signature="e#269#270#0" expanded="true" />
+                <element signature="e#299#300#0" expanded="true" />
+                <element signature="e#328#329#0" expanded="true" />
+                <element signature="e#369#370#0" expanded="true" />
+                <element signature="e#405#406#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BucketsDAOImpl.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/rfflr/Model/BucketsDAOImpl.java">
+      <file leaf-file-name="Numbers.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/rfflr/Model/Numbers.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="330">
-              <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="885" max-vertical-offset="1005">
+              <caret line="59" column="28" selection-start-line="59" selection-start-column="28" selection-end-line="59" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NumbersDAOImpl.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/rfflr/Model/NumbersDAOImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="360">
+              <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pickPrize.jsp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/rfflr/WEBViews/WEBINF/pickPrize.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-29.458334" vertical-offset="388" max-vertical-offset="1320">
+              <caret line="73" column="22" selection-start-line="73" selection-start-column="22" selection-end-line="73" selection-end-column="22" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <marker date="1419273044000" expanded="true" signature="22:4235" placeholder="..." />
+                <marker date="1419273044000" expanded="true" signature="33:180" placeholder="..." />
+                <marker date="1419273044000" expanded="true" signature="189:4226" placeholder="..." />
+                <marker date="1419273044000" expanded="true" signature="249:4215" placeholder="..." />
+                <marker date="1419273044000" expanded="true" signature="326:4166" placeholder="..." />
+                <marker date="1419273044000" expanded="true" signature="422:1091" placeholder="..." />
+                <marker date="1419273044000" expanded="true" signature="488:1068" placeholder="..." />
+                <marker date="1419273044000" expanded="true" signature="562:708" placeholder="..." />
+                <marker date="1419273044000" expanded="true" signature="782:842" placeholder="..." />
+                <marker date="1419273044000" expanded="true" signature="916:1041" placeholder="..." />
+                <marker date="1419273044000" expanded="true" signature="1126:3726" placeholder="..." />
+                <marker date="1419273044000" expanded="true" signature="1182:1927" placeholder="..." />
+                <marker date="1419273044000" expanded="true" signature="1234:1896" placeholder="..." />
+                <marker date="1419273044000" expanded="true" signature="1456:1861" placeholder="..." />
+                <marker date="1419273044000" expanded="true" signature="1979:2815" placeholder="..." />
+                <marker date="1419273044000" expanded="true" signature="2027:2788" placeholder="..." />
+                <marker date="1419273044000" expanded="true" signature="2363:2757" placeholder="..." />
+                <marker date="1419273044000" expanded="true" signature="2867:3703" placeholder="..." />
+                <marker date="1419273044000" expanded="true" signature="2915:3676" placeholder="..." />
+                <marker date="1419273044000" expanded="true" signature="3251:3645" placeholder="..." />
+                <marker date="1419273044000" expanded="true" signature="3784:4150" placeholder="..." />
+                <marker date="1419273044000" expanded="true" signature="3870:4050" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="validation.jsp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/rfflr/WEBViews/WEBINF/validation.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-11.875" vertical-offset="0" max-vertical-offset="630">
+              <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="24" selection-end-column="22" />
+              <folding>
+                <marker date="1419967863000" expanded="true" signature="22:1139" placeholder="..." />
+                <marker date="1419967863000" expanded="true" signature="30:162" placeholder="..." />
+                <marker date="1419967863000" expanded="true" signature="171:1130" placeholder="..." />
+                <marker date="1419967863000" expanded="true" signature="203:1120" placeholder="..." />
+                <marker date="1419967863000" expanded="true" signature="279:926" placeholder="..." />
+                <marker date="1419967863000" expanded="true" signature="402:906" placeholder="..." />
+                <marker date="1419967863000" expanded="true" signature="483:806" placeholder="..." />
+                <marker date="1419967863000" expanded="true" signature="557:783" placeholder="..." />
+                <marker date="1419967863000" expanded="true" signature="968:1105" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="addTickets.jsp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/rfflr/WEBViews/WEBINF/addTickets.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-16.875" vertical-offset="270" max-vertical-offset="1605">
+              <caret line="45" column="0" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+              <folding>
+                <marker date="1419967748000" expanded="true" signature="257:4586" placeholder="..." />
+                <marker date="1419967748000" expanded="true" signature="265:397" placeholder="..." />
+                <marker date="1419967748000" expanded="true" signature="406:4577" placeholder="..." />
+                <marker date="1419967748000" expanded="true" signature="439:4556" placeholder="..." />
+                <marker date="1419967748000" expanded="true" signature="474:602" placeholder="..." />
+                <marker date="1419967748000" expanded="true" signature="637:4500" placeholder="..." />
+                <marker date="1419967748000" expanded="true" signature="760:1402" placeholder="..." />
+                <marker date="1419967748000" expanded="true" signature="1496:2114" placeholder="..." />
+                <marker date="1419967748000" expanded="true" signature="1585:2002" placeholder="..." />
+                <marker date="1419967748000" expanded="true" signature="2373:3315" placeholder="..." />
+                <marker date="1419967748000" expanded="true" signature="2420:3269" placeholder="..." />
+                <marker date="1419967748000" expanded="true" signature="2472:3218" placeholder="..." />
+                <marker date="1419967748000" expanded="true" signature="2527:2794" placeholder="..." />
+                <marker date="1419967748000" expanded="true" signature="2847:2883" placeholder="..." />
+                <marker date="1419967748000" expanded="true" signature="2938:3187" placeholder="..." />
+                <marker date="1419967748000" expanded="true" signature="3492:4446" placeholder="..." />
+                <marker date="1419967748000" expanded="true" signature="3539:4400" placeholder="..." />
+                <marker date="1419967748000" expanded="true" signature="3591:4349" placeholder="..." />
+                <marker date="1419967748000" expanded="true" signature="3646:3925" placeholder="..." />
+                <marker date="1419967748000" expanded="true" signature="3978:4014" placeholder="..." />
+                <marker date="1419967748000" expanded="true" signature="4069:4318" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -67,23 +175,19 @@
       <file leaf-file-name="TicketsDAOImpl.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/rfflr/Model/TicketsDAOImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
-              <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="390">
+              <caret line="12" column="75" selection-start-line="12" selection-start-column="75" selection-end-line="12" selection-end-column="75" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Tickets.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/rfflr/Model/Tickets.java">
+      <file leaf-file-name="BucketsDAOImpl.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/rfflr/Model/BucketsDAOImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="840">
-              <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="390">
+              <caret line="12" column="75" selection-start-line="12" selection-start-column="75" selection-end-line="12" selection-end-column="75" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -91,11 +195,9 @@
       <file leaf-file-name="Buckets.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/rfflr/Model/Buckets.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="2" max-vertical-offset="960">
-              <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="1260">
+              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="77" selection-end-column="1" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -127,19 +229,21 @@
         <option value="$PROJECT_DIR$/src/main/resources/sqlmap/sqlMapConfig.xml" />
         <option value="$PROJECT_DIR$/src/main/java/rfflr/DAO/Impl/TicketsDAOImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/rfflr/DAO/Impl/BucketsDAOImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/rfflr/Logic/raffleLogic.java" />
-        <option value="$PROJECT_DIR$/src/main/java/rfflr/Model/BucketsDAOImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/rfflr/Model/TicketsDAOImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/rfflr/Model/Buckets.java" />
         <option value="$PROJECT_DIR$/src/main/java/rfflr/Model/Tickets.java" />
+        <option value="$PROJECT_DIR$/src/main/java/rfflr/WEBViews/validation.html" />
+        <option value="$PROJECT_DIR$/src/main/java/rfflr/WEBViews/pickPrize.html" />
+        <option value="$PROJECT_DIR$/src/main/java/rfflr/WEBViews/addTickets.html" />
+        <option value="$PROJECT_DIR$/src/main/java/rfflr/WEBViews/WEBINF/pickPrize.html" />
+        <option value="$PROJECT_DIR$/src/main/java/rfflr/Model/Numbers.java" />
+        <option value="$PROJECT_DIR$/src/main/java/rfflr/Model/NumbersDAOImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/rfflr/Model/BucketsDAOImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/rfflr/Model/TicketsDAOImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/rfflr/Model/ticketAmount.java" />
+        <option value="$PROJECT_DIR$/src/main/java/rfflr/WEBViews/WEBINF/addTickets.html" />
+        <option value="$PROJECT_DIR$/src/main/java/rfflr/WEBViews/WEBINF/validation.html" />
+        <option value="$PROJECT_DIR$/src/main/java/rfflr/Logic/raffleLogic.java" />
       </list>
-    </option>
-  </component>
-  <component name="MavenImportPreferences">
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="importAutomatically" value="true" />
-      </MavenImportingSettings>
     </option>
   </component>
   <component name="ProjectFrameBounds">
@@ -159,7 +263,7 @@
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectReloadState">
-    <option name="STATE" value="2" />
+    <option name="STATE" value="0" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -174,19 +278,17 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="myproject" />
+              <option name="myItemId" value="rfflrAPI" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="myproject" />
+              <option name="myItemId" value="rfflrAPI" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -196,7 +298,25 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="myproject" />
+              <option name="myItemId" value="rfflrAPI" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rfflr" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rfflrAPI" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -212,13 +332,55 @@
               <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rfflr" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEBINF" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rfflrAPI" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rfflr" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rfflr" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEBINF" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="resources" />
               <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="myproject" />
+              <option name="myItemId" value="rfflrAPI" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -248,7 +410,7 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="myproject" />
+              <option name="myItemId" value="rfflrAPI" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -278,7 +440,7 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="myproject" />
+              <option name="myItemId" value="rfflrAPI" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -301,13 +463,11 @@
               <option name="myItemId" value="rfflr" />
               <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DAO" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -324,8 +484,13 @@
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
     <property name="FullScreen" value="true" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Documents/workspace/zizeAPI" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/rfflr/WEBViews/WEBINF" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
@@ -363,6 +528,19 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method />
+    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -388,19 +566,6 @@
       <envs />
       <properties />
       <listeners />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -477,7 +642,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1440" y="-399" width="1920" height="1080" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -494,13 +659,13 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.185836" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.185836" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -527,11 +692,349 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/rfflr/Logic/raffleLogic.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1020" max-vertical-offset="3480">
+          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/rfflr/Model/Numbers.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="885" max-vertical-offset="1005">
+          <caret line="59" column="28" selection-start-line="59" selection-start-column="28" selection-end-line="59" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/rfflr/Model/NumbersDAOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="360">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/rfflr/WEBViews/WEBINF/pickPrize.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="720" max-vertical-offset="1140">
+          <caret line="48" column="97" selection-start-line="48" selection-start-column="97" selection-end-line="48" selection-end-column="97" />
+          <folding>
+            <marker date="1419273044000" expanded="true" signature="22:4235" placeholder="..." />
+            <marker date="1419273044000" expanded="true" signature="33:180" placeholder="..." />
+            <marker date="1419273044000" expanded="true" signature="189:4226" placeholder="..." />
+            <marker date="1419273044000" expanded="true" signature="249:4215" placeholder="..." />
+            <marker date="1419273044000" expanded="true" signature="326:4166" placeholder="..." />
+            <marker date="1419273044000" expanded="true" signature="422:1091" placeholder="..." />
+            <marker date="1419273044000" expanded="true" signature="488:1068" placeholder="..." />
+            <marker date="1419273044000" expanded="true" signature="562:708" placeholder="..." />
+            <marker date="1419273044000" expanded="true" signature="782:842" placeholder="..." />
+            <marker date="1419273044000" expanded="true" signature="916:1041" placeholder="..." />
+            <marker date="1419273044000" expanded="true" signature="1126:3726" placeholder="..." />
+            <marker date="1419273044000" expanded="true" signature="1182:1927" placeholder="..." />
+            <marker date="1419273044000" expanded="true" signature="1234:1896" placeholder="..." />
+            <marker date="1419273044000" expanded="true" signature="1456:1861" placeholder="..." />
+            <marker date="1419273044000" expanded="true" signature="1979:2815" placeholder="..." />
+            <marker date="1419273044000" expanded="true" signature="2027:2788" placeholder="..." />
+            <marker date="1419273044000" expanded="true" signature="2363:2757" placeholder="..." />
+            <marker date="1419273044000" expanded="true" signature="2867:3703" placeholder="..." />
+            <marker date="1419273044000" expanded="true" signature="2915:3676" placeholder="..." />
+            <marker date="1419273044000" expanded="true" signature="3251:3645" placeholder="..." />
+            <marker date="1419273044000" expanded="true" signature="3784:4150" placeholder="..." />
+            <marker date="1419273044000" expanded="true" signature="3870:4050" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/rfflr/WEBViews/WEBINF/validation.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="390" max-vertical-offset="540">
+          <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+          <folding>
+            <marker date="1419967863000" expanded="true" signature="22:1139" placeholder="..." />
+            <marker date="1419967863000" expanded="true" signature="30:162" placeholder="..." />
+            <marker date="1419967863000" expanded="true" signature="171:1130" placeholder="..." />
+            <marker date="1419967863000" expanded="true" signature="203:1120" placeholder="..." />
+            <marker date="1419967863000" expanded="true" signature="279:926" placeholder="..." />
+            <marker date="1419967863000" expanded="true" signature="402:906" placeholder="..." />
+            <marker date="1419967863000" expanded="true" signature="483:806" placeholder="..." />
+            <marker date="1419967863000" expanded="true" signature="557:783" placeholder="..." />
+            <marker date="1419967863000" expanded="true" signature="968:1105" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/rfflr/WEBViews/WEBINF/addTickets.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="476" max-vertical-offset="1410">
+          <caret line="80" column="32" selection-start-line="80" selection-start-column="32" selection-end-line="80" selection-end-column="32" />
+          <folding>
+            <marker date="1419967748000" expanded="true" signature="257:4586" placeholder="..." />
+            <marker date="1419967748000" expanded="true" signature="265:397" placeholder="..." />
+            <marker date="1419967748000" expanded="true" signature="406:4577" placeholder="..." />
+            <marker date="1419967748000" expanded="true" signature="439:4556" placeholder="..." />
+            <marker date="1419967748000" expanded="true" signature="474:602" placeholder="..." />
+            <marker date="1419967748000" expanded="true" signature="637:4500" placeholder="..." />
+            <marker date="1419967748000" expanded="true" signature="760:1402" placeholder="..." />
+            <marker date="1419967748000" expanded="true" signature="1496:2114" placeholder="..." />
+            <marker date="1419967748000" expanded="true" signature="1585:2002" placeholder="..." />
+            <marker date="1419967748000" expanded="true" signature="2373:3315" placeholder="..." />
+            <marker date="1419967748000" expanded="true" signature="2420:3269" placeholder="..." />
+            <marker date="1419967748000" expanded="true" signature="2472:3218" placeholder="..." />
+            <marker date="1419967748000" expanded="true" signature="2527:2794" placeholder="..." />
+            <marker date="1419967748000" expanded="true" signature="2847:2883" placeholder="..." />
+            <marker date="1419967748000" expanded="true" signature="2938:3187" placeholder="..." />
+            <marker date="1419967748000" expanded="true" signature="3492:4446" placeholder="..." />
+            <marker date="1419967748000" expanded="true" signature="3539:4400" placeholder="..." />
+            <marker date="1419967748000" expanded="true" signature="3591:4349" placeholder="..." />
+            <marker date="1419967748000" expanded="true" signature="3646:3925" placeholder="..." />
+            <marker date="1419967748000" expanded="true" signature="3978:4014" placeholder="..." />
+            <marker date="1419967748000" expanded="true" signature="4069:4318" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/rfflr/Model/TicketsDAOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="390">
+          <caret line="12" column="75" selection-start-line="12" selection-start-column="75" selection-end-line="12" selection-end-column="75" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rfflrAPI.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1365">
+          <caret line="0" column="19" selection-start-line="0" selection-start-column="19" selection-end-line="0" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/rfflr/Model/BucketsDAOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="390">
+          <caret line="12" column="75" selection-start-line="12" selection-start-column="75" selection-end-line="12" selection-end-column="75" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/rfflr/Model/Buckets.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="1260">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="77" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/rfflr/Logic/raffleLogic.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="405" max-vertical-offset="3090">
+          <caret line="27" column="38" selection-start-line="27" selection-start-column="38" selection-end-line="27" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/rfflr/WEBViews/WEBINF/pickPrize.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="146" max-vertical-offset="1095">
+          <caret line="49" column="22" selection-start-line="49" selection-start-column="16" selection-end-line="49" selection-end-column="22" />
+          <folding>
+            <marker date="1419273044000" expanded="true" signature="22:4235" placeholder="..." />
+            <marker date="1419273044000" expanded="true" signature="33:180" placeholder="..." />
+            <marker date="1419273044000" expanded="true" signature="189:4226" placeholder="..." />
+            <marker date="1419273044000" expanded="true" signature="249:4215" placeholder="..." />
+            <marker date="1419273044000" expanded="true" signature="326:4166" placeholder="..." />
+            <marker date="1419273044000" expanded="true" signature="422:1091" placeholder="..." />
+            <marker date="1419273044000" expanded="true" signature="488:1068" placeholder="..." />
+            <marker date="1419273044000" expanded="true" signature="562:708" placeholder="..." />
+            <marker date="1419273044000" expanded="true" signature="782:842" placeholder="..." />
+            <marker date="1419273044000" expanded="true" signature="916:1041" placeholder="..." />
+            <marker date="1419273044000" expanded="true" signature="1126:3726" placeholder="..." />
+            <marker date="1419273044000" expanded="true" signature="1182:1927" placeholder="..." />
+            <marker date="1419273044000" expanded="true" signature="1234:1896" placeholder="..." />
+            <marker date="1419273044000" expanded="true" signature="1456:1861" placeholder="..." />
+            <marker date="1419273044000" expanded="true" signature="1979:2815" placeholder="..." />
+            <marker date="1419273044000" expanded="true" signature="2027:2788" placeholder="..." />
+            <marker date="1419273044000" expanded="true" signature="2363:2757" placeholder="..." />
+            <marker date="1419273044000" expanded="true" signature="2867:3703" placeholder="..." />
+            <marker date="1419273044000" expanded="true" signature="2915:3676" placeholder="..." />
+            <marker date="1419273044000" expanded="true" signature="3251:3645" placeholder="..." />
+            <marker date="1419273044000" expanded="true" signature="3784:4150" placeholder="..." />
+            <marker date="1419273044000" expanded="true" signature="3870:4050" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/rfflr/WEBViews/WEBINF/validation.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="390" max-vertical-offset="540">
+          <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+          <folding>
+            <marker date="1419967863000" expanded="true" signature="22:1139" placeholder="..." />
+            <marker date="1419967863000" expanded="true" signature="30:162" placeholder="..." />
+            <marker date="1419967863000" expanded="true" signature="171:1130" placeholder="..." />
+            <marker date="1419967863000" expanded="true" signature="203:1120" placeholder="..." />
+            <marker date="1419967863000" expanded="true" signature="279:926" placeholder="..." />
+            <marker date="1419967863000" expanded="true" signature="402:906" placeholder="..." />
+            <marker date="1419967863000" expanded="true" signature="483:806" placeholder="..." />
+            <marker date="1419967863000" expanded="true" signature="557:783" placeholder="..." />
+            <marker date="1419967863000" expanded="true" signature="968:1105" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/rfflr/WEBViews/WEBINF/addTickets.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="476" max-vertical-offset="1410">
+          <caret line="80" column="32" selection-start-line="80" selection-start-column="32" selection-end-line="80" selection-end-column="32" />
+          <folding>
+            <marker date="1419967748000" expanded="true" signature="257:4586" placeholder="..." />
+            <marker date="1419967748000" expanded="true" signature="265:397" placeholder="..." />
+            <marker date="1419967748000" expanded="true" signature="406:4577" placeholder="..." />
+            <marker date="1419967748000" expanded="true" signature="439:4556" placeholder="..." />
+            <marker date="1419967748000" expanded="true" signature="474:602" placeholder="..." />
+            <marker date="1419967748000" expanded="true" signature="637:4500" placeholder="..." />
+            <marker date="1419967748000" expanded="true" signature="760:1402" placeholder="..." />
+            <marker date="1419967748000" expanded="true" signature="1496:2114" placeholder="..." />
+            <marker date="1419967748000" expanded="true" signature="1585:2002" placeholder="..." />
+            <marker date="1419967748000" expanded="true" signature="2373:3315" placeholder="..." />
+            <marker date="1419967748000" expanded="true" signature="2420:3269" placeholder="..." />
+            <marker date="1419967748000" expanded="true" signature="2472:3218" placeholder="..." />
+            <marker date="1419967748000" expanded="true" signature="2527:2794" placeholder="..." />
+            <marker date="1419967748000" expanded="true" signature="2847:2883" placeholder="..." />
+            <marker date="1419967748000" expanded="true" signature="2938:3187" placeholder="..." />
+            <marker date="1419967748000" expanded="true" signature="3492:4446" placeholder="..." />
+            <marker date="1419967748000" expanded="true" signature="3539:4400" placeholder="..." />
+            <marker date="1419967748000" expanded="true" signature="3591:4349" placeholder="..." />
+            <marker date="1419967748000" expanded="true" signature="3646:3925" placeholder="..." />
+            <marker date="1419967748000" expanded="true" signature="3978:4014" placeholder="..." />
+            <marker date="1419967748000" expanded="true" signature="4069:4318" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rfflrAPI.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1365">
+          <caret line="0" column="19" selection-start-line="0" selection-start-column="19" selection-end-line="0" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/rfflr/Model/BucketsDAOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="240" max-vertical-offset="330">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/rfflr/Model/TicketsDAOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="360">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/rfflr/Model/Tickets.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="615" max-vertical-offset="1080">
+          <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/rfflr/Model/Buckets.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="1260">
+          <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/rfflr/Logic/raffleLogic.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2141" max-vertical-offset="3120">
+          <caret line="157" column="34" selection-start-line="157" selection-start-column="34" selection-end-line="157" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/rfflr/Model/BucketsDAOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="240" max-vertical-offset="330">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/rfflr/Model/TicketsDAOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="360">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/rfflr/Model/Tickets.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="615" max-vertical-offset="1080">
+          <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/rfflr/Model/Buckets.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="1260">
+          <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/rfflr/Logic/raffleLogic.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2325" max-vertical-offset="3120">
+          <caret line="157" column="34" selection-start-line="157" selection-start-column="34" selection-end-line="157" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/rfflr/Model/BucketsDAOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="240" max-vertical-offset="330">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/rfflr/Model/TicketsDAOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="360">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/rfflr/Model/Tickets.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="615" max-vertical-offset="1080">
+          <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/rfflr/Model/Buckets.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="1260">
+          <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="435">
           <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="71" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -539,7 +1042,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="210" max-vertical-offset="555">
           <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -547,11 +1049,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="585" max-vertical-offset="2160">
           <caret line="39" column="41" selection-start-line="39" selection-start-column="41" selection-end-line="39" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1401#1402#0" expanded="true" />
-            <element signature="e#1442#1443#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -559,7 +1057,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="225">
           <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -567,7 +1064,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="3645">
           <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -575,7 +1071,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="555">
           <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -583,7 +1078,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="195">
           <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -591,15 +1085,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="3.6349206" vertical-offset="1620" max-vertical-offset="19545">
           <caret line="337" column="12" selection-start-line="337" selection-start-column="12" selection-end-line="337" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myproject.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="1380">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -607,7 +1092,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="300">
           <caret line="13" column="79" selection-start-line="13" selection-start-column="79" selection-end-line="13" selection-end-column="79" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -615,27 +1099,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="57" max-vertical-offset="1740">
           <caret line="55" column="33" selection-start-line="55" selection-start-column="33" selection-end-line="55" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/rfflr/Model/TicketsDAOImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/rfflr/Model/Buckets.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="2" max-vertical-offset="960">
-          <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -643,31 +1106,158 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="840">
           <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rfflrAPI.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1365">
+          <caret line="0" column="19" selection-start-line="0" selection-start-column="19" selection-end-line="0" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/rfflr/Model/Numbers.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="765">
+          <caret line="59" column="28" selection-start-line="59" selection-start-column="28" selection-end-line="59" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/rfflr/Model/Buckets.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="885">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="77" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/rfflr/Model/NumbersDAOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/rfflr/Model/BucketsDAOImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="330">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="390">
+          <caret line="12" column="75" selection-start-line="12" selection-start-column="75" selection-end-line="12" selection-end-column="75" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/rfflr/Model/TicketsDAOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="300">
+          <caret line="12" column="75" selection-start-line="12" selection-start-column="75" selection-end-line="12" selection-end-column="75" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/rfflr/Model/ticketAmount.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="956">
+          <caret line="0" column="20" selection-start-line="0" selection-start-column="20" selection-end-line="0" selection-end-column="20" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#168#169#0" expanded="true" />
+            <element signature="e#196#197#0" expanded="true" />
+            <element signature="e#235#236#0" expanded="true" />
+            <element signature="e#269#270#0" expanded="true" />
+            <element signature="e#299#300#0" expanded="true" />
+            <element signature="e#328#329#0" expanded="true" />
+            <element signature="e#369#370#0" expanded="true" />
+            <element signature="e#405#406#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/rfflr/WEBViews/WEBINF/addTickets.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-16.875" vertical-offset="270" max-vertical-offset="1605">
+          <caret line="45" column="0" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+          <folding>
+            <marker date="1419967748000" expanded="true" signature="257:4586" placeholder="..." />
+            <marker date="1419967748000" expanded="true" signature="265:397" placeholder="..." />
+            <marker date="1419967748000" expanded="true" signature="406:4577" placeholder="..." />
+            <marker date="1419967748000" expanded="true" signature="439:4556" placeholder="..." />
+            <marker date="1419967748000" expanded="true" signature="474:602" placeholder="..." />
+            <marker date="1419967748000" expanded="true" signature="637:4500" placeholder="..." />
+            <marker date="1419967748000" expanded="true" signature="760:1402" placeholder="..." />
+            <marker date="1419967748000" expanded="true" signature="1496:2114" placeholder="..." />
+            <marker date="1419967748000" expanded="true" signature="1585:2002" placeholder="..." />
+            <marker date="1419967748000" expanded="true" signature="2373:3315" placeholder="..." />
+            <marker date="1419967748000" expanded="true" signature="2420:3269" placeholder="..." />
+            <marker date="1419967748000" expanded="true" signature="2472:3218" placeholder="..." />
+            <marker date="1419967748000" expanded="true" signature="2527:2794" placeholder="..." />
+            <marker date="1419967748000" expanded="true" signature="2847:2883" placeholder="..." />
+            <marker date="1419967748000" expanded="true" signature="2938:3187" placeholder="..." />
+            <marker date="1419967748000" expanded="true" signature="3492:4446" placeholder="..." />
+            <marker date="1419967748000" expanded="true" signature="3539:4400" placeholder="..." />
+            <marker date="1419967748000" expanded="true" signature="3591:4349" placeholder="..." />
+            <marker date="1419967748000" expanded="true" signature="3646:3925" placeholder="..." />
+            <marker date="1419967748000" expanded="true" signature="3978:4014" placeholder="..." />
+            <marker date="1419967748000" expanded="true" signature="4069:4318" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/rfflr/WEBViews/WEBINF/pickPrize.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-29.458334" vertical-offset="388" max-vertical-offset="1320">
+          <caret line="73" column="22" selection-start-line="73" selection-start-column="22" selection-end-line="73" selection-end-column="22" />
+          <folding>
+            <marker date="1419273044000" expanded="true" signature="22:4235" placeholder="..." />
+            <marker date="1419273044000" expanded="true" signature="33:180" placeholder="..." />
+            <marker date="1419273044000" expanded="true" signature="189:4226" placeholder="..." />
+            <marker date="1419273044000" expanded="true" signature="249:4215" placeholder="..." />
+            <marker date="1419273044000" expanded="true" signature="326:4166" placeholder="..." />
+            <marker date="1419273044000" expanded="true" signature="422:1091" placeholder="..." />
+            <marker date="1419273044000" expanded="true" signature="488:1068" placeholder="..." />
+            <marker date="1419273044000" expanded="true" signature="562:708" placeholder="..." />
+            <marker date="1419273044000" expanded="true" signature="782:842" placeholder="..." />
+            <marker date="1419273044000" expanded="true" signature="916:1041" placeholder="..." />
+            <marker date="1419273044000" expanded="true" signature="1126:3726" placeholder="..." />
+            <marker date="1419273044000" expanded="true" signature="1182:1927" placeholder="..." />
+            <marker date="1419273044000" expanded="true" signature="1234:1896" placeholder="..." />
+            <marker date="1419273044000" expanded="true" signature="1456:1861" placeholder="..." />
+            <marker date="1419273044000" expanded="true" signature="1979:2815" placeholder="..." />
+            <marker date="1419273044000" expanded="true" signature="2027:2788" placeholder="..." />
+            <marker date="1419273044000" expanded="true" signature="2363:2757" placeholder="..." />
+            <marker date="1419273044000" expanded="true" signature="2867:3703" placeholder="..." />
+            <marker date="1419273044000" expanded="true" signature="2915:3676" placeholder="..." />
+            <marker date="1419273044000" expanded="true" signature="3251:3645" placeholder="..." />
+            <marker date="1419273044000" expanded="true" signature="3784:4150" placeholder="..." />
+            <marker date="1419273044000" expanded="true" signature="3870:4050" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/rfflr/WEBViews/WEBINF/validation.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.875" vertical-offset="0" max-vertical-offset="630">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="24" selection-end-column="22" />
+          <folding>
+            <marker date="1419967863000" expanded="true" signature="22:1139" placeholder="..." />
+            <marker date="1419967863000" expanded="true" signature="30:162" placeholder="..." />
+            <marker date="1419967863000" expanded="true" signature="171:1130" placeholder="..." />
+            <marker date="1419967863000" expanded="true" signature="203:1120" placeholder="..." />
+            <marker date="1419967863000" expanded="true" signature="279:926" placeholder="..." />
+            <marker date="1419967863000" expanded="true" signature="402:906" placeholder="..." />
+            <marker date="1419967863000" expanded="true" signature="483:806" placeholder="..." />
+            <marker date="1419967863000" expanded="true" signature="557:783" placeholder="..." />
+            <marker date="1419967863000" expanded="true" signature="968:1105" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/rfflr/Logic/raffleLogic.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.4444444" vertical-offset="45" max-vertical-offset="2955">
-          <caret line="157" column="35" selection-start-line="157" selection-start-column="35" selection-end-line="157" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1401#1402#0" expanded="true" />
-            <element signature="e#1442#1443#0" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.88331515" vertical-offset="1800" max-vertical-offset="4365">
+          <caret line="187" column="0" selection-start-line="187" selection-start-column="0" selection-end-line="187" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
