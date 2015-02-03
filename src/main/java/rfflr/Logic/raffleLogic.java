@@ -39,7 +39,7 @@ public class raffleLogic {
 
     }
 
-    @RequestMapping(value="/winner/{raffleId}/{bucketId}", method=RequestMethod.GET)
+    @RequestMapping("/winner/{raffleId}/{bucketId}")
     @ResponseBody
     public Integer getWinner(@PathVariable(value="raffleId") Integer raffleId, @PathVariable(value="bucketId") Integer bucketId, HttpServletResponse response) {
         try {
@@ -49,17 +49,22 @@ public class raffleLogic {
         }
     }
 
-    @RequestMapping(value="/confirm/{employee}/{raffleId}", method=RequestMethod.GET)
+    @RequestMapping("/confirm/{employee}/{raffleId}")
     public boolean isEntered(@PathVariable(value="employee") Integer employee, @PathVariable(value="raffleId") Integer raffleId) {
         return ticketsDAO.getByEmployee(employee, raffleId) != null;
     }
 
-    @RequestMapping(value="/test", method=RequestMethod.POST)
+    @RequestMapping("/test")
     public String error() {
         return "<h1>Working</h1>";
     }
 
-    @RequestMapping(value="/add/{employee}/{raffleId}/{bucketId}/{amount}/{singleEntry}", method=RequestMethod.POST)
+    @RequestMapping("/")
+    public String displayPage() {
+        return "<html><head><link href=\"//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css\" rel=\"stylesheet\"><!-- Latest compiled and minified JavaScript --><script src=\"//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js\"></script><!-- Latest compiled and minified CSS --><link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css\"></head><body><div class=\"col-lg-12\"><div class=\"col-lg-3\"></div><div class=\"col-lg-6\"><h1> PLEASE SCAN YOUR BADGE : </h1><br><form action=\"\" method=\"POST\" role=\"form\"><legend>Entry</legend><div class=\"form-group\"><form:form method=\"post\" commandName=\"validateEntry\"><label for=\"entry\">Entry : </label><form:input type=\"text\" path=\"entry\" class=\"form-control\" id=\"entry\" placeholder=\"Input field\"></form:input></form:form></div><button type=\"submit\" class=\"btn btn-primary\">Submit</button></form></div>       <div class=\"col-lg-3\"><img src=\"http://www.raptortech.com/raptor.png\" class=\"img-responsive\" alt=\"Image\"></div></div></body></html>";
+    }
+
+    @RequestMapping("/add/{employee}/{raffleId}/{bucketId}/{amount}/{singleEntry}")
     @ResponseBody
     public boolean addEntry(@PathVariable(value="employee") Integer employee, @PathVariable(value="raffleId") Integer raffleId,
                             @PathVariable(value="bucketId") Integer bucketId, @PathVariable(value="amount") Integer amount, @PathVariable(value="singleEntry") boolean singleEntry
@@ -112,13 +117,13 @@ public class raffleLogic {
         return false;
     }
 
-    @RequestMapping(value="/tickets/{employee}/{raffleId}", method=RequestMethod.POST)
+    @RequestMapping("/tickets/{employee}/{raffleId}")
     @ResponseBody
     public Integer getTickets(@PathVariable(value="employee") Integer employee, @PathVariable(value="raffleId") Integer raffleId, HttpServletResponse response) {
         return ticketsDAO.getTickets(employee,raffleId).getTicketNum();
     }
 
-    @RequestMapping(value="/ticketdelete/{employee}/{raffleId}/{ticketDec}", method=RequestMethod.DELETE)
+    @RequestMapping("/ticketdelete/{employee}/{raffleId}/{ticketDec}")
     @ResponseBody
     public boolean deleteTickets(@PathVariable(value="employee") Integer employee, @PathVariable(value="raffleId") Integer raffleId, @PathVariable(value="ticketDec") Integer ticketDec, HttpServletResponse response) {
 
@@ -144,7 +149,7 @@ public class raffleLogic {
         return false;
     }
 
-    @RequestMapping(value = "/add", method = RequestMethod.POST)
+    @RequestMapping("/add")
     @ResponseBody
     public ModelAndView addTickets(@ModelAttribute("ticketAddition")ticketAmount amount, ModelMap model) {
         ModelAndView view = new ModelAndView("addTickets");
@@ -166,7 +171,7 @@ public class raffleLogic {
         return view;
     }
 
-    @RequestMapping(value = "/validateEntry", method = RequestMethod.POST)
+    @RequestMapping("/validateEntry")
     @ResponseBody
     public ModelAndView validateTickets(@ModelAttribute("validate")ticketAmount user, ModelMap model) {
         ModelAndView view = new ModelAndView("validation");
@@ -186,7 +191,7 @@ public class raffleLogic {
         return view;
     }
 
-    @RequestMapping(value = "/pickPrizes", method = RequestMethod.POST)
+    @RequestMapping("/pickPrizes")
     @ResponseBody
     public ModelAndView pickPrize(@ModelAttribute("validate")ticketAmount user, ModelMap model) {
         ModelAndView view = new ModelAndView("validation");
@@ -208,7 +213,7 @@ public class raffleLogic {
         return view;
     }
 
-    @RequestMapping(value="/give/{employee}/{raffleId}/{bucketId}", method=RequestMethod.POST)
+    @RequestMapping("/give/{employee}/{raffleId}/{bucketId}")
     @ResponseBody
     public boolean giveTickets(@PathVariable(value="employee") Integer employee, @PathVariable(value="raffleId") Integer raffleId, @PathVariable(value="tickets") Integer tickets, HttpServletResponse response) {
         Tickets ticket = new Tickets();
@@ -226,7 +231,7 @@ public class raffleLogic {
         return true;
     }
 
-    @RequestMapping(value="/employeedelete/{raffleId}/{employee}", method=RequestMethod.DELETE)
+    @RequestMapping("/employeedelete/{raffleId}/{employee}")
     @ResponseBody
     public void deleteEmployee(@PathVariable(value="raffleId") Integer raffleId, @PathVariable(value="employee") Integer employee, HttpServletResponse response) {
         Buckets bucket = new Buckets();
@@ -236,7 +241,7 @@ public class raffleLogic {
         bucketsDAO.delete(bucket);
     }
 
-    @RequestMapping(value="/multiplewinners/{raffleId}/{bucketId}/{howMany}", method=RequestMethod.POST)
+    @RequestMapping("/multiplewinners/{raffleId}/{bucketId}/{howMany}")
     @ResponseBody
     public List<Integer> getMultipleForBucket(@PathVariable(value="raffleId") Integer raffleId, @PathVariable(value="bucketId") Integer bucketId, @PathVariable(value="howMany") Integer howMany, HttpServletResponse response) {
         List<Integer> winners = null;
@@ -258,7 +263,7 @@ public class raffleLogic {
         return winners;
     }
 
-    @RequestMapping(value="/raffledelete/{raffleId}", method=RequestMethod.DELETE)
+    @RequestMapping("/raffledelete/{raffleId}")
     @ResponseBody
     public void deleteRaffleEntries(@PathVariable(value="raffleId") Integer raffleId, HttpServletResponse response) {
         Buckets bucket = new Buckets();
@@ -274,7 +279,7 @@ public class raffleLogic {
         numbersDAO.delete(number);
     }
 
-    @RequestMapping(value="/bucketdelete/{bucketId}", method=RequestMethod.DELETE)
+    @RequestMapping("/bucketdelete/{bucketId}")
     @ResponseBody
     public void deleteBucketEntries(@PathVariable(value="bucketId") Integer bucketId, HttpServletResponse response) {
         Buckets bucket = new Buckets();
@@ -290,7 +295,7 @@ public class raffleLogic {
         numbersDAO.delete(number);
     }
 
-    @RequestMapping(value="/number/{bucketId}", method=RequestMethod.POST)
+    @RequestMapping("/number/{bucketId}")
     @ResponseBody
     public int getNumberInBucket(@PathVariable(value="bucketId") Integer bucketId, HttpServletResponse response) {
         return numbersDAO.findByBucketId(bucketId).getNumberOfEntries();
